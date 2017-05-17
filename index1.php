@@ -7,14 +7,19 @@
     </head>
     <body>
         <div class="content">
-            <form id="formIdentifier" action="index2.php" method="get">
+            <form id="formIdentifier" action="index.php" method="get">
                 <fieldset>
-                    <legend>Ein sehr einfaches Formular</legend>
-                    <label for="sqlInput">SQL-Query</label>
+                    <legend>Mietverwaltung</legend>
+                    <label for="sqlInput">Mögliche Abfragen für Mietobjekt</label>
                     <br />
-                    <textarea id="sqlInput" name="sqlInput" rows="4" cols="50"></textarea>
+                 <!--  <textarea id="sqlInput" name="sqlInput" rows="4" cols="50"></textarea>-->
+                    <select name="sqlInput" size="1">
+                        <option value="wohnung">Welche Wohungen gibt es im Wohnhaus</option>
+                        <option value="personen">Welche Personen leben im Haus</option>
+                        <option value="ansprechpartner">Wer ist Ansprechpartner für Wohnung</option>
+                    </select>
                 </fieldset>
-                <input type="submit" value="SQL senden" />
+                <input type="submit" value="senden" />
             </form>
         </div> <!-- end content -->
     </body>
