@@ -61,3 +61,18 @@ $mysqliObject->close();
 // Save the result as a string
 $output = print_r($return, true);
 ?>
+<!DOCTYPE html>
+<html dir="ltr" lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Mietshausübersicht</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="content">
+            <h1>Antwort:</h1>
+            <pre><?php echo $output; ?></pre>
+            <a href="index_Si.php">zurück zum Formular...</a>
+        </div> <!-- end content -->
+    </body>
+</html>
