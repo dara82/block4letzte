@@ -17,7 +17,7 @@ elseif ($frage == 'Fahrzeug') {
 }//Kundendaten anzeigen
 elseif ($frage == 'kundendaten') {
     $sql= "SELECT Kunde.Vorname, Kunde.Nachname, Kunde.Anschrift, Kunde.Hausnummer, Kunde.Ort, Kunde.PLZ, Fahrzeug.Automarke, Fahrzeug.Baujahr, FROM Kunde 
-        INNER JOIN Fahrzeug on Kunde.Fahrzeug_ID = Fahrzeug.Fahrzeug_ID";
+        INNER JOIN Fahrzeug on Kunde.Kunde_ID = Fahrzeug.Kunde_ID";
 }
 //Welches FAhrzeug gehört zu wem 
 elseif ($frage == 'welchesFahrzeug') {
@@ -65,7 +65,7 @@ $output = print_r($return, true);
 <html dir="ltr" lang="de">
     <head>
         <meta charset="utf-8">
-        <title>Mietshausübersicht</title>
+        <title>Kundendaten</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
