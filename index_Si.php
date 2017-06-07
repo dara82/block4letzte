@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="content">
-            <form id="formIdentifier" action="index.php" method="get">
+            <form id="formIdentifier" action="Simon_Kunden.php" method="get">
                 <fieldset>
                     <legend>Kundendaten</legend>
                     <label for="sqlInput">Mögliche Abfragen für der Kunden</label>
